@@ -1,0 +1,18 @@
+name: Day 4 GitHub Actions
+
+"on":
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  learning:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello from Day 4!"
+
+      - name: Show success
+        run: echo "GitHub Actions is working!"
